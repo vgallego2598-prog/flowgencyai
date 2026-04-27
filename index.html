@@ -1,1 +1,580 @@
-<!DOCTYPE html><html lang=\"es\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Flowgency AI - Consultoría de IA y automatización para empresas</title><meta name=\"description\" content=\"Implementamos inteligencia artificial y automatización en marketing, ventas y operaciones.\"></head><body><h1>Desplegando Flowgency AI...</h1></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <title>Flowgency AI · Consultoría de IA y automatización para empresas</title>
+  <meta name="description" content="Implementamos inteligencia artificial y automatización en marketing, ventas y operaciones. Consultoría estratégica para empresas que quieren crecer con IA." />
+  <meta name="keywords" content="consultoría IA, inteligencia artificial empresas, automatización marketing, agentes IA, growth con IA, consultoría marketing digital, IA para ventas" />
+  <meta name="author" content="Flowgency AI" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://flowgencyai.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://flowgencyai.com/" />
+  <meta property="og:title" content="Flowgency AI · Consultoría de IA y automatización para empresas" />
+  <meta property="og:description" content="Implementamos inteligencia artificial y automatización en marketing, ventas y operaciones. Consultoría estratégica para empresas que quieren crecer con IA." />
+  <meta property="og:image" content="https://flowgencyai.com/og-image.png" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Flowgency AI" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://flowgencyai.com/" />
+  <meta name="twitter:title" content="Flowgency AI · Consultoría de IA y automatización" />
+  <meta name="twitter:description" content="Ayudamos a empresas a implementar IA y automatización en marketing, ventas y operaciones." />
+  <meta name="twitter:image" content="https://flowgencyai.com/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%230a0a0f'/%3E%3Cpath d='M30 30h40v10H40v15h25v10H40v15H30z' fill='url(%23g)'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Flowgency AI",
+    "description": "Consultoría de IA y automatización para empresas en marketing, ventas y operaciones.",
+    "url": "https://flowgencyai.com",
+    "email": "victor@gallego.consulting",
+    "areaServed": "ES",
+    "serviceType": ["Consultoría de IA", "Automatización de marketing", "Implementación de agentes IA", "Estrategia de growth"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --color-bg: #0a0a0f;
+      --color-bg-alt: #0f0f17;
+      --color-surface: #14141d;
+      --color-surface-2: #1a1a26;
+      --color-border: rgba(255, 255, 255, 0.08);
+      --color-border-strong: rgba(255, 255, 255, 0.14);
+      --color-text: #ffffff;
+      --color-text-muted: #a1a1b0;
+      --color-text-dim: #6b6b7d;
+      --color-primary: #4f46e5;
+      --color-primary-hover: #6366f1;
+      --color-secondary: #06b6d4;
+      --color-accent: #8b5cf6;
+      --gradient-primary: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+      --gradient-accent: linear-gradient(135deg, #8b5cf6 0%, #4f46e5 50%, #06b6d4 100%);
+      --gradient-text: linear-gradient(135deg, #818cf8 0%, #22d3ee 100%);
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-display: 'Space Grotesk', 'Inter', sans-serif;
+      --container: 1200px;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+      --shadow-glow: 0 0 40px rgba(79, 70, 229, 0.35);
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --transition: 0.3s var(--ease);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--color-text);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; transition: color var(--transition); }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+    ul { list-style: none; }
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+    .text-gradient {
+      background: var(--gradient-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-secondary);
+      margin-bottom: 16px;
+    }
+    .section-head { max-width: 720px; margin: 0 auto 64px; text-align: center; }
+    .section-head h2 { font-size: clamp(28px, 4vw, 44px); margin-bottom: 16px; }
+    .section-head__sub { font-size: 17px; color: var(--color-text-muted); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: var(--radius-md);
+      transition: all var(--transition);
+      white-space: nowrap;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+    .btn--primary {
+      background: var(--gradient-primary);
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(79, 70, 229, 0.4);
+    }
+    .btn--primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(79, 70, 229, 0.55); }
+    .btn--ghost { background: transparent; color: var(--color-text); border: 1px solid var(--color-border-strong); }
+    .btn--ghost:hover { background: rgba(255, 255, 255, 0.05); border-color: var(--color-primary); }
+    .btn--small { padding: 10px 18px; font-size: 14px; }
+    .btn--large { padding: 18px 32px; font-size: 17px; }
+    .btn--full { width: 100%; }
+
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 16px 0;
+      background: rgba(10, 10, 15, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid transparent;
+      transition: all var(--transition);
+    }
+    .header.scrolled { background: rgba(10, 10, 15, 0.92); border-bottom-color: var(--color-border); }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-display); font-weight: 700; font-size: 18px; letter-spacing: -0.02em;
+    }
+    .logo__mark { display: flex; }
+    .logo__accent {
+      background: var(--gradient-text);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .nav__list { display: flex; gap: 8px; }
+    .nav__link {
+      display: inline-block; padding: 8px 14px; font-size: 14px; font-weight: 500;
+      color: var(--color-text-muted); border-radius: var(--radius-sm); transition: all var(--transition);
+    }
+    .nav__link:hover { color: var(--color-text); background: rgba(255, 255, 255, 0.04); }
+    .header__cta { display: inline-flex; }
+    .menu-toggle { display: none; flex-direction: column; gap: 5px; padding: 8px; }
+    .menu-toggle span { width: 22px; height: 2px; background: var(--color-text); border-radius: 2px; transition: all var(--transition); }
+    .menu-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .menu-toggle.active span:nth-child(2) { opacity: 0; }
+    .menu-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .hero { position: relative; padding: 160px 0 100px; overflow: hidden; }
+    .hero__bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+    .hero__grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    }
+    .hero__glow { position: absolute; width: 600px; height: 600px; border-radius: 50%; filter: blur(120px); opacity: 0.35; }
+    .hero__glow--1 { top: -200px; left: -100px; background: var(--color-primary); }
+    .hero__glow--2 { bottom: -200px; right: -100px; background: var(--color-secondary); }
+    .hero__inner {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center;
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 14px; font-size: 13px; font-weight: 500;
+      color: var(--color-text-muted);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--color-border);
+      border-radius: 999px; margin-bottom: 24px;
+    }
+    .badge__dot { width: 6px; height: 6px; border-radius: 50%; background: var(--color-secondary); box-shadow: 0 0 8px var(--color-secondary); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .hero__title { font-size: clamp(36px, 5.5vw, 60px); margin-bottom: 20px; }
+    .hero__subtitle { font-size: 18px; color: var(--color-text-muted); margin-bottom: 32px; max-width: 560px; }
+    .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+    .hero__proof { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--color-text-dim); }
+    .hero__proof-stars { color: #fbbf24; letter-spacing: 1px; }
+    .hero__visual { display: flex; justify-content: center; }
+
+    .dashboard {
+      width: 100%; max-width: 520px;
+      background: linear-gradient(180deg, rgba(20, 20, 29, 0.9) 0%, rgba(15, 15, 23, 0.9) 100%);
+      border: 1px solid var(--color-border-strong);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md), var(--shadow-glow);
+      overflow: hidden; backdrop-filter: blur(20px);
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+    .dashboard__header { display: flex; align-items: center; gap: 6px; padding: 14px 18px; background: rgba(255, 255, 255, 0.02); border-bottom: 1px solid var(--color-border); }
+    .dashboard__dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255, 255, 255, 0.2); }
+    .dashboard__title { margin-left: 12px; font-size: 12px; color: var(--color-text-dim); font-family: var(--font-display); }
+    .dashboard__body { padding: 24px; }
+    .dashboard__kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+    .kpi { padding: 14px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--color-border); border-radius: var(--radius-sm); }
+    .kpi__label { display: block; font-size: 11px; color: var(--color-text-dim); margin-bottom: 4px; }
+    .kpi__value { display: block; font-family: var(--font-display); font-size: 22px; font-weight: 700; color: var(--color-text); line-height: 1; }
+    .kpi__delta { display: inline-block; margin-top: 4px; font-size: 11px; font-weight: 600; color: #34d399; }
+    .chart { margin-bottom: 24px; padding: 16px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--color-border); border-radius: var(--radius-sm); }
+    .chart svg { width: 100%; height: 100px; }
+    .chart__line { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 2.5s var(--ease) forwards; animation-delay: 0.5s; }
+    @keyframes drawLine { to { stroke-dashoffset: 0; } }
+    .flow { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .flow__node { display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; background: rgba(255, 255, 255, 0.04); border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-size: 12px; font-weight: 500; color: var(--color-text-muted); }
+    .flow__node--ai { background: rgba(79, 70, 229, 0.15); border-color: rgba(79, 70, 229, 0.4); color: var(--color-text); }
+    .flow__arrow { color: var(--color-text-dim); font-size: 14px; }
+
+    .value { padding: 100px 0; background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+    .value__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+    .value__item { padding: 32px 28px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); transition: all var(--transition); }
+    .value__item:hover { border-color: var(--color-border-strong); transform: translateY(-4px); }
+    .value__icon { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; margin-bottom: 20px; background: rgba(79, 70, 229, 0.12); border-radius: var(--radius-sm); color: var(--color-secondary); }
+    .value__icon svg { width: 24px; height: 24px; }
+    .value__item h3 { font-size: 19px; margin-bottom: 10px; }
+    .value__item p { font-size: 15px; color: var(--color-text-muted); }
+
+    .services { padding: 120px 0; position: relative; }
+    .services__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .service-card { position: relative; padding: 36px 32px; background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-surface-2) 100%); border: 1px solid var(--color-border); border-radius: var(--radius-lg); transition: all var(--transition); overflow: hidden; }
+    .service-card::before {
+      content: ''; position: absolute; inset: 0;
+      border-radius: var(--radius-lg); padding: 1px;
+      background: var(--gradient-primary);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude;
+      opacity: 0; transition: opacity var(--transition); pointer-events: none;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .service-card:hover::before { opacity: 1; }
+    .service-card__icon { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; margin-bottom: 20px; background: var(--gradient-primary); border-radius: var(--radius-sm); color: #fff; box-shadow: 0 4px 16px rgba(79, 70, 229, 0.4); }
+    .service-card__icon svg { width: 26px; height: 26px; }
+    .service-card h3 { font-size: 20px; margin-bottom: 12px; }
+    .service-card p { font-size: 15px; color: var(--color-text-muted); }
+
+    .method { padding: 120px 0; background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+    .method__steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; counter-reset: step; }
+    .method__step { position: relative; padding: 32px 28px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); transition: all var(--transition); }
+    .method__step:hover { border-color: rgba(79, 70, 229, 0.5); transform: translateY(-4px); }
+    .method__num { display: inline-block; font-family: var(--font-display); font-size: 14px; font-weight: 700; color: var(--color-secondary); margin-bottom: 16px; letter-spacing: 0.05em; }
+    .method__step h3 { font-size: 19px; margin-bottom: 10px; }
+    .method__step p { font-size: 15px; color: var(--color-text-muted); }
+
+    .cases { padding: 120px 0; }
+    .cases__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .case { padding: 28px 24px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); transition: all var(--transition); }
+    .case:hover { background: var(--color-surface-2); border-color: var(--color-border-strong); transform: translateY(-3px); }
+    .case__tag { display: inline-block; padding: 4px 10px; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-secondary); background: rgba(6, 182, 212, 0.1); border-radius: 999px; margin-bottom: 14px; }
+    .case h3 { font-size: 18px; margin-bottom: 8px; }
+    .case p { font-size: 14px; color: var(--color-text-muted); }
+
+    .cta-block { padding: 80px 0; }
+    .cta-block__inner {
+      position: relative; text-align: center; padding: 72px 32px;
+      background: radial-gradient(ellipse at top, rgba(79, 70, 229, 0.2) 0%, transparent 60%), linear-gradient(180deg, var(--color-surface) 0%, var(--color-surface-2) 100%);
+      border: 1px solid var(--color-border-strong); border-radius: var(--radius-xl); overflow: hidden;
+    }
+    .cta-block__inner::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 40px 40px; pointer-events: none;
+      mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+    }
+    .cta-block__inner > * { position: relative; z-index: 1; }
+    .cta-block h2 { font-size: clamp(26px, 4vw, 40px); margin-bottom: 16px; max-width: 760px; margin-left: auto; margin-right: auto; }
+    .cta-block p { max-width: 580px; margin: 0 auto 32px; font-size: 17px; color: var(--color-text-muted); }
+
+    .contact { padding: 120px 0; background: var(--color-bg-alt); border-top: 1px solid var(--color-border); }
+    .contact__inner { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; }
+    .contact__info h2 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 16px; }
+    .contact__info > p { font-size: 17px; color: var(--color-text-muted); margin-bottom: 32px; }
+    .contact__list { display: flex; flex-direction: column; gap: 14px; }
+    .contact__list li { display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--color-text-muted); }
+    .contact__list svg { flex-shrink: 0; color: var(--color-secondary); }
+    .contact__list a { color: var(--color-text); border-bottom: 1px dashed var(--color-border-strong); }
+    .contact__list a:hover { color: var(--color-secondary); border-color: var(--color-secondary); }
+
+    .contact__form { padding: 36px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); }
+    .form__row { margin-bottom: 18px; }
+    .form__row label { display: block; font-size: 13px; font-weight: 500; color: var(--color-text-muted); margin-bottom: 6px; }
+    .form__row input, .form__row textarea {
+      width: 100%; padding: 13px 16px; font-family: inherit; font-size: 15px;
+      color: var(--color-text); background: var(--color-bg);
+      border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm);
+      transition: all var(--transition);
+    }
+    .form__row input::placeholder, .form__row textarea::placeholder { color: var(--color-text-dim); }
+    .form__row input:focus, .form__row textarea:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15); }
+    .form__row textarea { resize: vertical; min-height: 100px; }
+    .form__success { margin-top: 16px; padding: 14px 16px; background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.3); border-radius: var(--radius-sm); color: #34d399; font-size: 14px; font-weight: 500; }
+    .form__legal { margin-top: 16px; font-size: 12px; color: var(--color-text-dim); text-align: center; }
+
+    .footer { padding-top: 80px; background: var(--color-bg); border-top: 1px solid var(--color-border); }
+    .footer__inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; }
+    .footer__brand p { margin-top: 16px; font-size: 14px; color: var(--color-text-muted); max-width: 320px; }
+    .footer__col h4 { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text); margin-bottom: 16px; }
+    .footer__col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer__col a, .footer__col li { font-size: 14px; color: var(--color-text-muted); }
+    .footer__col a:hover { color: var(--color-secondary); }
+    .footer__bottom { padding: 24px 0; border-top: 1px solid var(--color-border); }
+    .footer__bottom-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 13px; color: var(--color-text-dim); }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    @media (max-width: 968px) {
+      .hero__inner { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+      .hero__subtitle { margin-left: auto; margin-right: auto; }
+      .hero__cta { justify-content: center; }
+      .hero__proof { justify-content: center; }
+      .contact__inner { grid-template-columns: 1fr; gap: 48px; }
+      .footer__inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+
+    @media (max-width: 768px) {
+      .header__cta { display: none; }
+      .menu-toggle { display: flex; }
+      .nav {
+        position: fixed; top: 70px; left: 0; right: 0;
+        background: rgba(10, 10, 15, 0.98); backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--color-border); padding: 16px 24px;
+        transform: translateY(-100%); opacity: 0; pointer-events: none;
+        transition: all var(--transition);
+      }
+      .nav.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+      .nav__list { flex-direction: column; gap: 4px; }
+      .nav__link { display: block; padding: 12px 16px; font-size: 16px; }
+      .hero { padding: 130px 0 80px; }
+      .value, .services, .method, .cases, .contact { padding: 80px 0; }
+      .section-head { margin-bottom: 48px; }
+      .cta-block__inner { padding: 48px 24px; }
+      .contact__form { padding: 24px; }
+      .footer__inner { grid-template-columns: 1fr; gap: 32px; }
+      .footer__bottom-inner { flex-direction: column; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 20px; }
+      .btn { padding: 12px 20px; font-size: 14px; }
+      .btn--large { padding: 16px 24px; font-size: 15px; }
+      .hero__cta { flex-direction: column; width: 100%; }
+      .hero__cta .btn { width: 100%; }
+      .dashboard__kpis { grid-template-columns: 1fr; }
+      .flow { flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Flowgency AI - Inicio">
+        <span class="logo__mark" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4f46e5" />
+                <stop offset="100%" stop-color="#06b6d4" />
+              </linearGradient>
+            </defs>
+            <rect width="100" height="100" rx="22" fill="url(#logoGrad)" />
+            <path d="M30 30h40v10H40v15h25v10H40v15H30z" fill="#fff" />
+          </svg>
+        </span>
+        <span class="logo__text">Flowgency <span class="logo__accent">AI</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list" id="navList">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#metodo" class="nav__link">Método</a></li>
+          <li><a href="#casos" class="nav__link">Casos de uso</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contacto" class="btn btn--primary btn--small header__cta">Solicitar diagnóstico</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="badge">
+            <span class="badge__dot"></span>
+            Consultoría de IA aplicada al negocio
+          </span>
+          <h1 class="hero__title">
+            Convierte la IA en tu <span class="text-gradient">ventaja competitiva</span> real.
+          </h1>
+          <p class="hero__subtitle">
+            Ayudamos a empresas a implementar inteligencia artificial y automatización en marketing, ventas y operaciones. Menos tareas manuales, más decisiones basadas en datos y crecimiento sostenido.
+          </p>
+          <div class="hero__cta">
+            <a href="#contacto" class="btn btn--primary">
+              Solicitar diagnóstico
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+          </div>
+
+          <div class="hero__proof">
+            <div class="hero__proof-stars" aria-hidden="true">★★★★★</div>
+            <p>Procesos automatizados y agentes IA implementados en empresas B2B y B2C.</p>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="dashboard">
+            <div class="dashboard__header">
+              <span class="dashboard__dot"></span>
+              <span class="dashboard__dot"></span>
+              <span class="dashboard__dot"></span>
+              <span class="dashboard__title">flowgency.ai · panel</span>
+            </div>
+            <div class="dashboard__body">
+              <div class="dashboard__kpis">
+                <div class="kpi">
+                  <span class="kpi__label">Leads/mes</span>
+                  <span class="kpi__value" data-count="284">0</span>
+                  <span class="kpi__delta">+38%</span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi__label">Conversión</span>
+                  <span class="kpi__value" data-count="12" data-suffix="%">0%</span>
+                  <span class="kpi__delta">+4.2 pts</span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi__label">Horas ahorradas</span>
+                  <span class="kpi__value" data-count="160" data-suffix="h">0h</span>
+                  <span class="kpi__delta">/mes</span>
+                </div>
+              </div>
+
+              <div class="chart">
+                <svg viewBox="0 0 400 120" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.4"/>
+                      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,90 L40,80 L80,85 L120,60 L160,65 L200,40 L240,45 L280,30 L320,35 L360,15 L400,20 L400,120 L0,120 Z" fill="url(#chartGrad)" />
+                  <path d="M0,90 L40,80 L80,85 L120,60 L160,65 L200,40 L240,45 L280,30 L320,35 L360,15 L400,20" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chart__line"/>
+                </svg>
+              </div>
+
+              <div class="flow">
+                <div class="flow__node">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  Lead
+                </div>
+                <span class="flow__arrow">→</span>
+                <div class="flow__node flow__node--ai">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 10v6m11-11h-6M7 12H1"/></svg>
+                  Agente IA
+                </div>
+                <span class="flow__arrow">→</span>
+                <div class="flow__node">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Cierre
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="value">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Qué hacemos</span>
+          <h2>Soluciones que conectan tecnología con resultados de negocio.</h2>
+        </div>
+
+        <div class="value__grid">
+          <article class="value__item reveal">
+            <div class="value__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3>Automatización de procesos</h3>
+            <p>Eliminamos tareas repetitivas para que tu equipo se enfoque en lo que realmente genera ingresos.</p>
+          </article>
+
+          <article class="value__item reveal">
+            <div class="value__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3>IA aplicada a marketing y ventas</h3>
+            <p>Diseñamos casos de uso con impacto medible: copy, segmentación, scoring, predicción y personalización.</p>
+          </article>
+
+          <article class="value__item reveal">
+            <div class="value__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Estrategia digital</h3>
+            <p>Roadmaps claros para integrar IA en tu stack actual sin romper lo que ya funciona.</p>
+          </article>
+
+          <article class="value__item reveal">
+            <div class="value__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+            </div>
+            <h3>Optimización de funnels</h3>
+            <p>Identificamos fricciones, automatizamos seguimiento y elevamos la tasa de conversión en cada etapa.</p>
+          </article>
+
+          <article class="value__item reveal">
+            <div class="value__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <h3>Integración de herramientas</h3>
+            <p>Conectamos CRM, marketing automation, datos y modelos de IA para que todo trabaje en sincronía.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2>Impl
